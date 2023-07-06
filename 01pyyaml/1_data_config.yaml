@@ -1,0 +1,47 @@
+SVN_URL_FLAG:
+  value:  True
+  help: '是否从svn 下载数据'  # True: 从svn下载， false 不从svn下载 
+
+SVN_URL:
+  value: 
+      - "https://172.17.1.83/svn/18-TC-Robot-Dataset-N1/01-表计类/03-训练数据集/07-液位计/液位计1型/BASE/zt_ywj_1x-01"
+      - "https://172.17.1.83/svn/18-TC-Robot-Dataset-N1/01-表计类/03-训练数据集/07-液位计/液位计1型/BASE/zt_ywj_1x-02"
+      - "https://172.17.1.83/svn/18-TC-Robot-Dataset-N1/01-表计类/03-训练数据集/07-液位计/液位计1型/SITE/zt_ywj_1x-抽水蓄能/03"
+      - "https://172.17.1.83/svn/18-TC-Robot-Dataset-N1/01-表计类/03-训练数据集/07-液位计/液位计1型/SITE/zt_ywj_1x-抽水蓄能/03-增强"
+      - "https://172.17.1.83/svn/18-TC-Robot-Dataset-N1/01-表计类/03-训练数据集/07-液位计/液位计1型/SITE/zt_ywj_1x-国能朔黄铁路黄骅"
+  help: 'SVN_URL'  # 当SVN_URL_FLAG为True 时，配置svn模型对应数据存储路径，支持多路径选择 
+
+SVN_TYPE:
+    value: U
+    help: 'C(checkout), U(update) ,N(None)' 
+    # 当SVN_URL_FLAG为True 时，数据选择方式，默认为update , 不区分大小写 
+    # C(checkout): 下次训练从svn checkout ; U(update): 下次训练从svn update ; N(None): 下次训练选择之前保存本地数据路径
+
+LOCAL_DIR:
+  value:  "/home/tc/TrainData/TRobot_MLP/DLV3P/branches/DLV3P_YWJ1X_SHTL_LOCAL"
+  help : "LOCAL_DIR " 
+  # 当 SVN_URL_FLAG为False时 ，本地数据路径，可来源于之前svn 下载到本地路径或服务器本地任意满足该模型存储格式路径 
+
+
+DATASET_DIR:
+  value: "/home/tc/TrainData/TRobot_MLP/DLV3P/branches/DLV3P_YWJ1X_SHTL"
+  help: 'DATASET_DIR' # 服务器训练数据存放路径 
+
+
+show:
+  value: True 
+  help: 'show' # 是否显示数据处理中间步骤
+  
+ratio:
+  value: 0.85
+  help: 'train val datastes ratio' # 训练集与验证集比例
+
+
+exist_ok:
+  value: False 
+  help: 'exist_ok is True  save path increment' # 文件路径存在是否覆盖， False 不覆盖，在后以阿拉伯字符创建新路径，True 覆盖
+
+  
+labels_train:
+  value: test
+  help: 'Just a test'

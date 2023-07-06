@@ -1,0 +1,5 @@
+[2023-06-20 16:54:50,136] (ERROR:pylog.py:6) logger.error
+[2023-06-20 16:54:50,137] (INFO:pylog.py:7) logger.info
+[2023-06-20 16:54:50,138] (WARNING:pylog.py:8) logger.warn
+[2023-06-20 16:54:50,139] (WARNING:pylog.py:9) logger.warning
+[2023-06-20 16:54:50,140] (CRITICAL:pylog.py:10) logger.critical

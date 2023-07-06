@@ -1,0 +1,20 @@
+plugins: 
+  -
+    plugin_idx: '1'
+    plugin_name: 'Yolov5_DET'
+    plugin_param: 
+      module_name: 'Yolov5_Smoke'
+      module_file: 
+        - 'Yolov5_Smoke'
+      img_resize:  [640,640]  #[384, 640]
+      iou_thres: 0.4
+      conf_thres: 0.5
+      class_num: 1
+
+class_list: 
+  -
+    class_id: 0             
+    class_name: '烟'    
+    alarm_flag: True    
+    confi_level: 0.8  
+    iou_thres: 0.001          

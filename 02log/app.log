@@ -1,0 +1,8 @@
+2023-06-20 15:45:48,150 - INFO - This is an info message.
+2023-06-20 15:45:48,151 - WARNING - This is a warning message.
+2023-06-20 15:45:48,151 - ERROR - This is an error message.
+2023-06-20 15:45:48,151 - CRITICAL - This is a critical message.
+2023-06-20 15:46:34,368 - INFO - This is an info message.
+2023-06-20 15:46:34,369 - WARNING - This is a warning message.
+2023-06-20 15:46:34,369 - ERROR - This is an error message.
+2023-06-20 15:46:34,369 - CRITICAL - This is a critical message.
